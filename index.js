@@ -9,4 +9,10 @@ app.get("/ping", (request, response) => {
   });
 });
 
+app.get("/health", (request, response) => {
+  return response.status(200).json({
+    message: "All system are operational.",
+  });
+});
+
 app.listen(1222, () => console.log("Server is started"));
