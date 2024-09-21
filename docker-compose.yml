@@ -1,0 +1,12 @@
+version: '3'
+services:
+  test_app:
+    build:
+      context: .
+    image: test_app
+    ports:
+      - "1222:1222"
+    deploy:
+      resources:
+        limits:
+          memory: 100M  # Set memory limit to 512MB
