@@ -5,6 +5,7 @@ const app = express();
 app.get("/ping", (request, response) => {
   return response.status(200).json({
     message: "Pong",
+    data:"All system are operational."
   });
 });
 
