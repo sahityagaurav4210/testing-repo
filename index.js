@@ -5,7 +5,6 @@ const app = express();
 app.get("/ping", (request, response) => {
   return response.status(200).json({
     message: "Pong",
-    ip: request.ip,
   });
 });
 
